@@ -34,7 +34,7 @@
 
     <properties>
         <maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
-        <camel.surefire.fork.additional-vmargs /><!-- Empty by default -->
+        <camel.surefire.fork.additional-vmargs/><!-- Empty by default -->
         <camel.surefire.fork.vmargs>-XX:+ExitOnOutOfMemoryError -XX:+HeapDumpOnOutOfMemoryError ${camel.surefire.fork.additional-vmargs}</camel.surefire.fork.vmargs>
         <camel.surefire.forkCount>1</camel.surefire.forkCount>
         <camel.surefire.forkTimeout>600</camel.surefire.forkTimeout>
@@ -43,10 +43,10 @@
         <camel.surefire.parallel.factor>1</camel.surefire.parallel.factor>
         <camel.surefire.parallel.strategy>dynamic</camel.surefire.parallel.strategy>
         <camel.failsafe.forkTimeout>600</camel.failsafe.forkTimeout>
-        <cxf.xjc.jvmArgs />
+        <cxf.xjc.jvmArgs/>
         <trimStackTrace>false</trimStackTrace>
-        <sourcecheckExcludes />
-        <sourcecheckExcludesComma />
+        <sourcecheckExcludes/>
+        <sourcecheckExcludesComma/>
 
         <!-- dependency versions -->
         <activemq-version>5.18.2</activemq-version>
@@ -125,7 +125,7 @@
         <directory-watcher-version>0.18.0</directory-watcher-version>
         <disruptor-version>3.4.4</disruptor-version>
         <dnsjava-version>3.5.2</dnsjava-version>
-        <djl-version>0.23.0</djl-version>
+        <djl-version>0.26.0</djl-version>
         <djl-mxnet-native-version>1.8.0</djl-mxnet-native-version>
         <djl-pytorch-native-version>1.9.1</djl-pytorch-native-version>
         <djl-tensorflow-native-version>2.4.1</djl-tensorflow-native-version>
