@@ -34,7 +34,7 @@
 
     <properties>
         <maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
-        <camel.surefire.fork.additional-vmargs /><!-- Empty by default -->
+        <camel.surefire.fork.additional-vmargs/><!-- Empty by default -->
         <camel.surefire.fork.vmargs>-XX:+ExitOnOutOfMemoryError -XX:+HeapDumpOnOutOfMemoryError ${camel.surefire.fork.additional-vmargs}</camel.surefire.fork.vmargs>
         <camel.surefire.forkCount>1</camel.surefire.forkCount>
         <camel.surefire.forkTimeout>600</camel.surefire.forkTimeout>
@@ -43,10 +43,10 @@
         <camel.surefire.parallel.factor>1</camel.surefire.parallel.factor>
         <camel.surefire.parallel.strategy>dynamic</camel.surefire.parallel.strategy>
         <camel.failsafe.forkTimeout>600</camel.failsafe.forkTimeout>
-        <cxf.xjc.jvmArgs />
+        <cxf.xjc.jvmArgs/>
         <trimStackTrace>false</trimStackTrace>
-        <sourcecheckExcludes />
-        <sourcecheckExcludesComma />
+        <sourcecheckExcludes/>
+        <sourcecheckExcludesComma/>
 
         <!-- dependency versions -->
         <activemq-version>5.18.2</activemq-version>
@@ -358,7 +358,7 @@
         <olingo2-version>2.0.12</olingo2-version>
         <olingo4-version>4.9.0</olingo4-version>
         <ognl-version>3.4.1</ognl-version>
-        <openapi-generator>6.6.0</openapi-generator>
+        <openapi-generator>7.9.0</openapi-generator>
         <openjpa-version>3.2.2</openjpa-version>
         <opensearch-rest-client-version>2.9.0</opensearch-rest-client-version>
         <opensearch-java-client-version>2.6.0</opensearch-java-client-version>
