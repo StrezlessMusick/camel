@@ -34,7 +34,7 @@
 
     <properties>
         <maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
-        <camel.surefire.fork.additional-vmargs /><!-- Empty by default -->
+        <camel.surefire.fork.additional-vmargs/><!-- Empty by default -->
         <camel.surefire.fork.vmargs>-XX:+ExitOnOutOfMemoryError -XX:+HeapDumpOnOutOfMemoryError ${camel.surefire.fork.additional-vmargs}</camel.surefire.fork.vmargs>
         <camel.surefire.forkCount>1</camel.surefire.forkCount>
         <camel.surefire.forkTimeout>600</camel.surefire.forkTimeout>
@@ -43,10 +43,10 @@
         <camel.surefire.parallel.factor>1</camel.surefire.parallel.factor>
         <camel.surefire.parallel.strategy>dynamic</camel.surefire.parallel.strategy>
         <camel.failsafe.forkTimeout>600</camel.failsafe.forkTimeout>
-        <cxf.xjc.jvmArgs />
+        <cxf.xjc.jvmArgs/>
         <trimStackTrace>false</trimStackTrace>
-        <sourcecheckExcludes />
-        <sourcecheckExcludesComma />
+        <sourcecheckExcludes/>
+        <sourcecheckExcludesComma/>
 
         <!-- dependency versions -->
         <activemq-version>5.18.2</activemq-version>
@@ -106,7 +106,7 @@
         <commons-net-version>3.9.0</commons-net-version>
         <commons-pool2-version>2.11.1</commons-pool2-version>
         <commons-text-version>1.10.0</commons-text-version>
-        <commons-validator-version>1.7</commons-validator-version>
+        <commons-validator-version>1.10.0</commons-validator-version>
         <compress-lzf-version>1.1.2</compress-lzf-version>
         <consul-client-version>1.5.3</consul-client-version>
         <cobertura-maven-plugin-version>2.7</cobertura-maven-plugin-version>
