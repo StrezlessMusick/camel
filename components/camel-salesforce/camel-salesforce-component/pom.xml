@@ -141,7 +141,7 @@
         <dependency>
             <groupId>tech.allegro.schema.json2avro</groupId>
             <artifactId>converter</artifactId>
-            <version>0.2.15</version>
+            <version>0.3.0</version>
         </dependency>
 
         <!-- logging -->
@@ -288,9 +288,7 @@
                         <phase>process-sources</phase>
                         <configuration>
                             <target>
-                                <replace token= "@javax.annotation.Generated"
-                                         value="@jakarta.annotation.Generated"
-                                         dir="target/generated-sources/protobuf/grpc-java">
+                                <replace token="@javax.annotation.Generated" value="@jakarta.annotation.Generated" dir="target/generated-sources/protobuf/grpc-java">
                                     <include name="**/*.java"/>
                                 </replace>
                             </target>
@@ -411,29 +409,29 @@ https://developer.salesforce.com/page/Force.com_Migration_Tool]]></message>
                                     <target xmlns:if="ant:if" xmlns:unless="ant:unless">
                                         <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
                                             <classpath>
-                                                <pathelement location="${salesforce.component.root}/it/resources/migration-tool/ant-salesforce.jar" />
+                                                <pathelement location="${salesforce.component.root}/it/resources/migration-tool/ant-salesforce.jar"/>
                                             </classpath>
                                         </taskdef>
 
-                                        <property prefix="prop" file="${project.build.directory}/test-classes/test-salesforce-login.properties" />
-                                        <property environment="env" />
+                                        <property prefix="prop" file="${project.build.directory}/test-classes/test-salesforce-login.properties"/>
+                                        <property environment="env"/>
 
-                                        <property name="username" value="${prop.salesforce.username}" if:set="prop.salesforce.username" />
-                                        <property name="username" value="${env.SALESFORCE_USERNAME}" if:set="env.SALESFORCE_USERNAME" />
+                                        <property name="username" value="${prop.salesforce.username}" if:set="prop.salesforce.username"/>
+                                        <property name="username" value="${env.SALESFORCE_USERNAME}" if:set="env.SALESFORCE_USERNAME"/>
 
-                                        <property name="password" value="${prop.salesforce.password}" if:set="prop.salesforce.password" />
-                                        <property name="password" value="${env.SALESFORCE_PASSWORD}" if:set="env.SALESFORCE_PASSWORD" />
+                                        <property name="password" value="${prop.salesforce.password}" if:set="prop.salesforce.password"/>
+                                        <property name="password" value="${env.SALESFORCE_PASSWORD}" if:set="env.SALESFORCE_PASSWORD"/>
 
-                                        <property name="serverurl" value="${prop.salesforce.login.url}" if:set="prop.salesforce.login.url" />
-                                        <property name="serverurl" value="${env.SALESFORCE_LOGIN_URL}" if:set="env.SALESFORCE_LOGIN_URL" />
+                                        <property name="serverurl" value="${prop.salesforce.login.url}" if:set="prop.salesforce.login.url"/>
+                                        <property name="serverurl" value="${env.SALESFORCE_LOGIN_URL}" if:set="env.SALESFORCE_LOGIN_URL"/>
 
-                                        <fail unless:set="username" message="To run the migrations you need to specify either `salesforce.username` in: ${project.build.directory}/generated-resources/test-salesforce-login.properties or set SALESFORCE_USERNAME environment variable" />
+                                        <fail unless:set="username" message="To run the migrations you need to specify either `salesforce.username` in: ${project.build.directory}/generated-resources/test-salesforce-login.properties or set SALESFORCE_USERNAME environment variable"/>
 
-                                        <fail unless:set="password" message="To run the migrations you need to specify either `salesforce.password` in: ${project.build.directory}/generated-resources/test-salesforce-login.properties or set SALESFORCE_PASSWORD environment variable" />
+                                        <fail unless:set="password" message="To run the migrations you need to specify either `salesforce.password` in: ${project.build.directory}/generated-resources/test-salesforce-login.properties or set SALESFORCE_PASSWORD environment variable"/>
 
-                                        <fail unless:set="serverurl" message="To run the migrations you need to specify either `salesforce.login.url` in: ${project.build.directory}/generated-resources/test-salesforce-login.properties or set SALESFORCE_LOGIN_URL environment variable" />
+                                        <fail unless:set="serverurl" message="To run the migrations you need to specify either `salesforce.login.url` in: ${project.build.directory}/generated-resources/test-salesforce-login.properties or set SALESFORCE_LOGIN_URL environment variable"/>
 
-                                        <sf:deploy xmlns:sf="antlib:com.salesforce" username="${username}" password="${password}" deployRoot="${salesforce.component.root}/it/resources/salesforce" rollbackOnError="true" serverurl="${serverurl}" />
+                                        <sf:deploy xmlns:sf="antlib:com.salesforce" username="${username}" password="${password}" deployRoot="${salesforce.component.root}/it/resources/salesforce" rollbackOnError="true" serverurl="${serverurl}"/>
                                     </target>
                                 </configuration>
                             </execution>
