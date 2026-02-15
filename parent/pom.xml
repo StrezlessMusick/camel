@@ -34,7 +34,7 @@
 
     <properties>
         <maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
-        <camel.surefire.fork.additional-vmargs /><!-- Empty by default -->
+        <camel.surefire.fork.additional-vmargs/><!-- Empty by default -->
         <camel.surefire.fork.vmargs>-XX:+ExitOnOutOfMemoryError -XX:+HeapDumpOnOutOfMemoryError ${camel.surefire.fork.additional-vmargs}</camel.surefire.fork.vmargs>
         <camel.surefire.forkCount>1</camel.surefire.forkCount>
         <camel.surefire.forkTimeout>600</camel.surefire.forkTimeout>
@@ -43,10 +43,10 @@
         <camel.surefire.parallel.factor>1</camel.surefire.parallel.factor>
         <camel.surefire.parallel.strategy>dynamic</camel.surefire.parallel.strategy>
         <camel.failsafe.forkTimeout>600</camel.failsafe.forkTimeout>
-        <cxf.xjc.jvmArgs />
+        <cxf.xjc.jvmArgs/>
         <trimStackTrace>false</trimStackTrace>
-        <sourcecheckExcludes />
-        <sourcecheckExcludesComma />
+        <sourcecheckExcludes/>
+        <sourcecheckExcludesComma/>
 
         <!-- dependency versions -->
         <activemq-version>5.18.2</activemq-version>
@@ -55,7 +55,7 @@
         <apacheds-version>2.0.0.AM26</apacheds-version>
         <apache-drill-version>1.21.1</apache-drill-version>
         <apicurio-version>2.0.3</apicurio-version>
-        <arangodb-java-version>7.1.0</arangodb-java-version>
+        <arangodb-java-version>7.5.0</arangodb-java-version>
         <as2-lib-version>5.1.1</as2-lib-version>
         <ascii-table-version>1.8.0</ascii-table-version>
         <asm-version>9.5</asm-version>
